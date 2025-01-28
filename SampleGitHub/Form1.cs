@@ -22,5 +22,10 @@ namespace SampleGitHub
             MessageBox.Show("Hello GitHUb!");
             checkBox1.Checked = true;
         }
+
+        private void checkBox1_CheckStateChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked) { checkBox2.Checked = true; }
+        }
     }
 }
